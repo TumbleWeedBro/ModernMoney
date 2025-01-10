@@ -1,0 +1,18 @@
+.section {
+  position: relative;
+  z-index: 1;
+  margin-top: -30px; /* Overlapping effect */
+  padding: 60px; /* Increase size */
+  min-height: 130px; /* Ensure a minimum height */
+  font-size: 1.2rem; /* Larger text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add depth */
+}
+
+.section:first-of-type {
+  margin-top: 0; /* Ensure the first section doesn't overlap anything */
+}
+
+.tag-container .badge {
+  font-size: 1rem; /* Larger badges */
+  padding: 0.5em 1em; /* Adjust padding for a better look */
+}
