@@ -10,7 +10,7 @@ body {
 
 h1, h2, h5 {
   font-weight: 700;
-  background-color: #1964b0;
+  background-color: #1964b0 !important;
 }
 
 a {
