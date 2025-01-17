@@ -2,7 +2,7 @@
 title: "Diversification: The Golden Rule of Investing"
 author: "Teekay"
 date: 2025-01-17
-image: https://www.pexels.com/photo/woman-in-white-long-sleeved-top-and-skirt-standing-on-field-2880507/
+image: //unsplash.it/510
 imageAlt: "This is an image"
 url: "something"
 authorUrl: "something"

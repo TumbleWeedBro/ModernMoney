@@ -2,7 +2,7 @@
 title: The Long-Term Perspective Building Wealth Through Patience
 author: "Teekay"
 date: 2025-01-17
-image: https://www.pexels.com/embed/?per_page=1&curated=true
+image: //unsplash.it/510
 imageAlt: "This is an image"
 url: "something"
 authorUrl: "something"
