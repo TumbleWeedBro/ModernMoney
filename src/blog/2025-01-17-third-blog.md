@@ -1,13 +1,14 @@
 ---
 title: The Long-Term Perspective Building Wealth Through Patience
-tags: post
-author: Teekay
+author: "Teekay"
 date: 2025-01-17
-image:  <iframe src="https://www.pexels.com/embed/?per_page=1&curated=true" width="100%" height="600" frameborder="0"></iframe>
-imageAlt: This is an image
-description: Investing often feels like an exclusive club reserved for those with deep pockets. But the truth is, anyone can start investing, no matter how small their initial amount. Here's why starting small matters and how you can begin.
+image: https://www.pexels.com/embed/?per_page=1&curated=true
+imageAlt: "This is an image"
+url: "something"
+authorUrl: "something"
+description: "Investing often feels like an exclusive club reserved for those with deep pockets. But the truth is, anyone can start investing, no matter how small their initial amount. Here's why starting small matters and how you can begin."
+readLength: "6 min"
 ---
-
 
 # Blog Post 3: **The Long-Term Perspective: Building Wealth Through Patience**
 
@@ -27,4 +28,3 @@ Investing isn’t a get-rich-quick scheme; it’s a journey that rewards patienc
 
 Wealth is built over decades, not days. Embrace the process, stay the course, and let time be your greatest ally.
 
----

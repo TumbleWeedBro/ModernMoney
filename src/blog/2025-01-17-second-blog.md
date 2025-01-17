@@ -1,13 +1,14 @@
 ---
-title: Diversification The Golden Rule of Investing
-author: Teekay
-tags: post
+title: "Diversification: The Golden Rule of Investing"
+author: "Teekay"
 date: 2025-01-17
-image:  <iframe src="https://www.pexels.com/embed/?per_page=1&curated=true" width="100%" height="600" frameborder="0"></iframe>
-imageAlt: This is an image
-description: Investing often feels like an exclusive club reserved for those with deep pockets. But the truth is, anyone can start investing, no matter how small their initial amount. Here's why starting small matters and how you can begin.
+image: https://www.pexels.com/photo/woman-in-white-long-sleeved-top-and-skirt-standing-on-field-2880507/
+imageAlt: "This is an image"
+url: "something"
+authorUrl: "something"
+description: "Investing often feels like an exclusive club reserved for those with deep pockets. But the truth is, anyone can start investing, no matter how small their initial amount. Here's why starting small matters and how you can begin."
+readLength: "6 min read"
 ---
-
 
 # Blog Post 2: **Diversification: The Golden Rule of Investing**
 
@@ -30,5 +31,3 @@ Diversification means spreading your investments across different asset classes,
 - **Industry Variety**: Include sectors like technology, healthcare, and energy to mitigate industry-specific risks.
 
 Diversification is not just a strategy; it's a mindset. Protect your investments by spreading them wisely and watch your portfolio weather market storms.
-
----
