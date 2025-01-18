@@ -17,6 +17,6 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
       - {label: "Image", name: "image", widget: "image"}
-       - {label: "Image Alt", name: "imageAlt", widget: "image"}
-       - {label: "Read Length", name: "readLength", widget: "string"}
-       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Image Alt", name: "imageAlt", widget: "string"} # Changed widget to string
+      - {label: "Read Length", name: "readLength", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
