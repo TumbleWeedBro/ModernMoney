@@ -1,0 +1,33 @@
+---
+title: Filtered Posts
+layout: 'base.njk'
+
+pagination:
+  data: collections.all
+  size: 10
+  alias: articles
+permalink: "tags/{{ pagination.pageNumber }}/"
+---
+
+<h1>Articles Tagged: {{ tag }}</h1>
+
+<ul>
+  {% for article in articles | filter(tag => tag.tags.includes(tag)) %}
+    <li>
+      <a href="{{ article.url }}">{{ article.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+<div class="card-columns listfeaturedtag">
+
+  {%- for article in articles | filter(a => a.data.tags.includes(tag)) -%}
+  <!-- begin post -->
+    {% include 'cardPost.njk' %}
+  <!-- end post -->
+  {%- endfor -%}
+
+
+</div>
