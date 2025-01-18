@@ -1,10 +1,14 @@
 ---
+date: 2025-01-18T14:01:43.376Z
 title: the first article
 description: something something or the other
 author: mr T
-date: 2025-01-18T14:01:43.376Z
+instaurl: something
 tags:
   - post
+  - wealth
+  - invest
+  - budget
 image: /assets/uploads/urban-vintage-78a265wpio4-unsplash.jpg
 imageAlt: nice image
 readLength: 7 min
