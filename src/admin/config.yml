@@ -2,12 +2,16 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "public/assets/uploads" # Where uploaded files are stored in the repository
+public_folder: "/assets/uploads"      # The public path to access uploaded files
+
+media_library: # Optional but recommended; defines the media library behavior
+  name: uploadcare # Or leave this out to use the default Netlify media library
+
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "/src/blog"
+    folder: "src/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -17,6 +21,6 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Image Alt", name: "imageAlt", widget: "string"} # Changed widget to string
+      - {label: "Image Alt", name: "imageAlt", widget: "string"}
       - {label: "Read Length", name: "readLength", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
