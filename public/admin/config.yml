@@ -24,10 +24,18 @@ collections:
         name: "tags"
         widget: "select"
         options:
-          - [ "post","wealth", "mindset", "growth", "success" ]
-          - [ "post", invest", "strategy", "growth", "wealth" ]
-          - [ "post", "budget", "savings", "tips", "finance" ]
-        default: [ "post" ]
+          - "post"
+          - "wealth"
+          - "mindset"
+          - "growth"
+          - "success"
+          - "invest"
+          - "strategy"
+          - "budget"
+          - "savings"
+          - "tips"
+          - "finance"
+        default: "post"
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Image Alt", name: "imageAlt", widget: "string"}
       - {label: "Read Length", name: "readLength", widget: "string"}
