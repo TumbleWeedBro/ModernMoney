@@ -22,7 +22,7 @@ collections:
       - {label: "Instagram video link", name: "instaurl", widget: "string"}
       - label: "Tags"
         name: "tags"
-        widget: "list"
+        widget: "select"
         allow_add: true
         options:
           - "post"
