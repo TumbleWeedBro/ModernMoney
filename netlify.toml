@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/admin/*"
-  to = "/admin/"
+  to = "/index/"
   status = 200
   force = true
   conditions = {Role = ["admin"]}
