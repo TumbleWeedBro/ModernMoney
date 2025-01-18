@@ -44,9 +44,11 @@ layout: 'base.njk'
 						<a href="/author/"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
 					</div>
 					<div class="col-md-10">
-						<a class="link-dark" href="/author/">Sal</a><a href="#" class="btn follow">Subscribe</a>
+						<a class="link-dark" href="/author/">{{author}}</a><a href="#" class="btn follow">Subscribe to newsletter</a>
 						<span class="author-description">Founder of WowThemes.net and creator of <b>"Mediumish"</b> theme that you're currently previewing. Developing professional premium themes, templates, plugins, scripts since 2012.</span>
-						<span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+						<span class="post-date">{{date | postDate}}</span><span class="dot"></span><span class="post-read">6 min read</span>
+						<br>
+						<span class="post-date"><a href="{{ instaurl }}">watch it on instagram</a></span>
 					</div>
 				</div>
 				<!-- End Top Menta -->
