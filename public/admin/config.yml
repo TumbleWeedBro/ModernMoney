@@ -22,7 +22,8 @@ collections:
       - {label: "Instagram video link", name: "instaurl", widget: "string"}
       - label: "Tags"
         name: "tags"
-        widget: "select"
+        widget: "list"
+        allow_add: true
         options:
           - "post"
           - "wealth"
@@ -35,7 +36,6 @@ collections:
           - "savings"
           - "tips"
           - "finance"
-        default: "post"
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Image Alt", name: "imageAlt", widget: "string"}
       - {label: "Read Length", name: "readLength", widget: "string"}
