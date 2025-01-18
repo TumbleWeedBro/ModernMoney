@@ -4,8 +4,6 @@ author: "Teekay"
 date: 2025-01-17
 image: //unsplash.it/510 
 imageAlt: "This is an image"
-url: "something"
-authorUrl: "something"
 description: "Investing often feels like an exclusive club reserved for those with deep pockets. But the truth is, anyone can start investing, no matter how small their initial amount. Here's why starting small matters and how you can begin."
 readLength: "6 min"
 ---

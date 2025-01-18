@@ -16,11 +16,15 @@
 <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
 <!-- Custom styles for this template -->
 <link href="/assets/css/mediumish.css" rel="stylesheet">
+<script defer type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+  
   {% include 'nav.njk' %}
   {{content | safe}}
   {% include 'footer.njk' %}
+ <div data-netlify-identity-menu></div>
+  <div data-netlify-identity-button>Login with Netlify Identity</div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
