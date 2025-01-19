@@ -32,6 +32,8 @@ collections:
           - "success"
           - "invest"
           - "strategy"
+          - "value"
+          - "diversify"
           - "budget"
           - "savings"
           - "tips"

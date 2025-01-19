@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Filtered
+---
+
+<div class="container">
+  <section class="featured-posts">
+    <div class="section-title">
+      <h2><span>Articles</span></h2>
+    </div>
+
+    <div class="card-columns listfeaturedtag">
+      {%- for post in collections[filter] -%}
+        <!-- begin post -->
+        {%- include 'cardPost.njk' %}
+        <!-- end post --> 
+      {%- endfor -%}
+    </div>
+  </section>
+</div>

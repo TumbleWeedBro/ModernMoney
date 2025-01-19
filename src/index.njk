@@ -27,8 +27,7 @@ layout: 'base.njk'
 				</div>
 				<div id="moneyMindset" class="collapse mt-3">
 					<p>Transform your thinking about money. Embrace abundance and watch your financial dreams take flight!</p>
-					<button class="btn btn-outline-dark" onclick="location.href='/tags/money-mindset/'">Read More</button>
-
+					<a class="btn btn-outline-dark" href="/moneyMindset/">Read More</a>
 				</div>
 			</div>
 
@@ -39,14 +38,13 @@ layout: 'base.njk'
 					<div class="tag-container">
 						<span class="badge rounded-pill border border-dark text-dark me-2">Invest</span>
 						<span class="badge rounded-pill border border-dark text-dark me-2">Strategy</span>
-						<span class="badge rounded-pill border border-dark text-dark me-2">Growth</span>
-						<span class="badge rounded-pill border border-dark text-dark">Wealth</span>
+						<span class="badge rounded-pill border border-dark text-dark me-2">Value</span>
+						<span class="badge rounded-pill border border-dark text-dark">Diversify</span>
 					</div>
 				</div>
 				<div id="smartInvesting" class="collapse mt-3">
 					<p>Learn strategies to make your money work for you. Smart investing leads to financial freedom!</p>
-					<button class="btn btn-outline-dark" onclick="location.href='/tags/money-mindset/'">Read More</button>
-
+					<a class="btn btn-outline-dark" href="/smartInvesting/">Read More</a>
 				</div>
 			</div>
 
@@ -63,8 +61,7 @@ layout: 'base.njk'
 				</div>
 				<div id="budgetingHacks" class="collapse mt-3">
 					<p>Master your finances with creative budgeting tips that save you money and time!</p>
-					<button class="btn btn-outline-dark" onclick="location.href='/tags/money-mindset/'">Read More</button>
-
+					<a class="btn btn-outline-dark" href="/budgetingHacks/">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -79,14 +76,11 @@ layout: 'base.njk'
 
 
 	<div class="card-columns listfeaturedtag">
-
 		{%- for post in collections.posts | reverse -%}
 		<!-- begin post -->
 			{% include 'cardPost.njk' %}
 		<!-- end post -->
 		{%- endfor -%}
-
-
 	</div>
 	</section>
 	<!-- End Featured
