@@ -87,39 +87,38 @@ layout: 'base.njk'
 
 <!-- Begin Related
 ================================================== -->
-<div class="graybg">
+{# <div class="graybg">
 	<div class="container">
 		<div class="row listrecent listrelated">
 			
 {%- set tagArray = tags | split(',') -%}
 {%- set postCount = 0 -%}
-{%- set tagIndex = 1 -%}
-{%- while postCount < 3 and tagIndex < tagArray | length -%}
-    {%- set currentTag = tagArray[tagIndex] -%}
-    {%- set postsForTag = collections[currentTag] -%}
-
+{%- set tagIndex = 0 -%}
+{%- for tag in tagArray %}
+    {%- set currentTag = tag %}
+    {%- set postsForTag = collections[currentTag] %}
     {%- for post in postsForTag %}
-        {%- if postCount < 3 -%}
+        {%- if postCount < 3 %}
             <!-- Display the post -->
             <div class="col-md-4">
                 <div class="card">
                     <a href="{{ post.url }}">
-                        <img class="img-fluid img-thumb" src="{{ post.thumbnail }}" alt="{{ post.title }}">
+                        <img class="img-fluid img-thumb" src="{{ post.data.image }}" alt="{{ post.data.title }}">
                     </a>
                     <div class="card-block">
-                        <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <h2 class="card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
                         <div class="metafooter">
                             <div class="wrapfooter">
                                 <span class="meta-footer-thumb">
-                                    <a href="{{ post.author_url }}">
-                                        <img class="author-thumb" src="{{ post.author_avatar }}" alt="{{ post.author }}">
+                                    <a href="{{ post.data.author }}">
+                                        <img class="author-thumb" src="" alt="{{ post.data.author }}">
                                     </a>
                                 </span>
                                 <span class="author-meta">
-                                    <span class="post-name"><a href="{{ post.author_url }}">{{ post.author }}</a></span><br/>
-                                    <span class="post-date">{{ post.date | date("d MMMM YYYY") }}</span>
+                                    <span class="post-name"><a href="{{ post.data.author }}">{{ post.data.author }}</a></span><br/>
+                                    <span class="post-date">{{ post.data.date | postDate }}</span>
                                     <span class="dot"></span>
-                                    <span class="post-read">{{ post.read_time }} min read</span>
+                                    <span class="post-read">{{ post.data.readLength }} min read</span>
                                 </span>
                                 <span class="post-read-more"><a href="{{ post.url }}" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
                             </div>
@@ -130,17 +129,11 @@ layout: 'base.njk'
             {%- set postCount = postCount + 1 -%}
         {%- endif %}
     {%- endfor %}
-
     {%- set tagIndex = tagIndex + 1 -%}
-{%- endwhile %}
-
-
-
-
-
+{%- endfor %}
 		</div>
 	</div>
-</div>
+</div> #}
 <!-- End Related Posts
 ================================================== -->
 

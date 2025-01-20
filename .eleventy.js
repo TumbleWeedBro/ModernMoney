@@ -12,6 +12,10 @@ module.exports = function(eleventyConfig) {
       const index = collection.indexOf(currentItem);
       return collection[index + 1] || null;
     });
+
+    eleventyConfig.addFilter("split", function(str, delimiter) {
+      return str.split(delimiter);
+    });
   
     // Custom filter for getting the previous item in a collection
     eleventyConfig.addFilter("getPreviousItem", function(collection, currentItem) {
