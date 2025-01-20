@@ -8,7 +8,16 @@ module.exports = function(eleventyConfig) {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     })
 
-
+    eleventyConfig.addFilter("getNextItem", function(collection, currentItem) {
+      const index = collection.indexOf(currentItem);
+      return collection[index + 1] || null;
+    });
+  
+    // Custom filter for getting the previous item in a collection
+    eleventyConfig.addFilter("getPreviousItem", function(collection, currentItem) {
+      const index = collection.indexOf(currentItem);
+      return collection[index - 1] || null;
+    });
     eleventyConfig.addCollection("moneyMindset", (collectionApi) => {
       return collectionApi.getFilteredByTag("wealth")
         .concat(collectionApi.getFilteredByTag("mindset"))
