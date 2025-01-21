@@ -483,3 +483,42 @@ ul.tags li a:hover {
   border-color: #1964b0;
 }
 
+.search-container {
+  position: relative; /* Establish a positioning context */
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Position the results absolutely */
+  top: 100%; /* Place results directly below the search bar */
+  left: 0; /* Align results with the left edge of the search bar */
+  width: 100%; /* Match the width of the search bar */
+  background-color: #ffffff; /* White background for better contrast */
+  border: 1px solid #ccc; /* Subtle border around the results */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  display: none; /* Hide results by default */
+  z-index: 10; /* Ensure the results appear above other elements */
+}
+
+.search-container:hover .search-results,
+.search-container:focus-within .search-results {
+  display: block; /* Show results on hover or focus */
+}
+
+.search-results li {
+  padding: 12px 16px; /* Add comfortable padding */
+  border-bottom: 1px solid #eee; /* Light divider between items */
+  cursor: pointer; /* Indicate that the items are interactive */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.search-results li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.search-results li:hover {
+  background-color: #f9f9f9; /* Subtle hover effect */
+}

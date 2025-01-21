@@ -58,8 +58,21 @@ async function initSearch() {
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
 
+    searchInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // Prevent default Enter key behavior
+      }
+    });
+
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.trim();
+
+      // Only show results if the user has typed at least one character
+      if (query.length === 0) {
+        searchResults.innerHTML = ''; // Clear results for empty input
+        return;
+      }
+
       const results = idx.search(query);
 
       if (results.length === 0) {
